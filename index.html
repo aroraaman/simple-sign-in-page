@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Signin</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+	
+	
+    <!-- Custom styles for this template -->
+    <link href="dist/css/signin.css" rel="stylesheet">
+	<link href="dist/css/datepicker.css"  rel="stylesheet">
+	
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="distjs/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+<div class="row" >
+		
+     <div style="width: 30%; margin: 0px auto;">
+		<h2>Sign in</h2>
+         <form class="form" role="form" method="post" accept-charset="UTF-8" id="login-nav" action="/authenticate">
+             <div class="form-group">
+               <label class="sr-only" for="InputEmail">Email address</label>
+                 <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Email address" required>
+              </div>
+              <div class="form-group">
+                  <label class="sr-only" for="InputPassword">Password</label>
+                       <input type="password" class="form-control" id="InputPassword" name="InputPassword" placeholder="Password" required>
+               </div>
+                <div style="width: 20%; margin: 0px auto;" class="form-group">
+                       <button type="submit" class="btn btn-success btn-block">Sign in</button>
+                 </div>
+        </form>
+    </div>
+	<br>
+	<div style="width: 30%; margin: 0px auto;">
+		<h2>New User</h2>
+         <form class="form" role="form" method="post" accept-charset="UTF-8" id="login-nav" action="/authenticate">
+             <div class="form-group">
+               <label class="sr-only" for="InputEmail">Email address</label>
+                 <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Email address" required>
+              </div>
+			  
+
+			  
+            <div class="form-group">
+			 <label class="sr-only" for="InputPassword">Date Of Birth</label>
+                <input  type="text" class="form-control" placeholder="Date Of Birth"  id="example1" required>
+            </div>
+       
+			  
+              <div class="form-group">
+                  <label class="sr-only" for="InputPassword">Password</label>
+                       <input type="password" class="form-control" id="InputPassword" name="InputPassword" placeholder="Password" required>
+               </div>
+			   
+                <div style="width: 20%; margin: 0px auto;" class="form-group">
+                       <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+                 </div>
+        </form>
+    </div>
+ </div>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="dist/js/ie10-viewport-bug-workaround.js"></script>
+	<script src="dist/js/jquery.min.js"></script>
+        <script src="dist/js/datepicker.js"></script>
+	<script type="text/javascript">
+            // When the document is ready
+            $(document).ready(function () {
+                
+                $('#example1').datepicker({
+                    format: "dd/mm/yyyy"
+                });  
+            
+            });
+        </script>
+  </body>
+</html>
